@@ -10,9 +10,9 @@ app.use(express.json());
 const db = mysql.createPool({
     host: 'zephyr.proxy.rlwy.net',
     user: 'root',
-    password: 'uEHKnDZxfjOqKyltoUNHVnNSilbaNYTz',
+    password: 'uEHKnDZxfjOqKyltoUNHVhNSilbaNYTz',
     database: 'railway',
-    port: 54548, 
+    port: 54548, // <-- Notice we are using the public port here!
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
