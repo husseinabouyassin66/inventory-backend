@@ -6,13 +6,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ⚠️ REPLACE THESE WITH YOUR ACTUAL RAILWAY VARIABLES
 const db = mysql.createPool({
     host: 'zephyr.proxy.rlwy.net',
     user: 'root',
-    password: 'uEHKnDZxfjOqKyltoUNHVhNSilbaNYTz',
+    password: 'uEHKnDZxfjOqKyltoUNHVnNSilbaNYTz', // Corrected password
     database: 'railway',
-    port: 54548, // <-- Notice we are using the public port here!
+    port: 54548, 
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0
